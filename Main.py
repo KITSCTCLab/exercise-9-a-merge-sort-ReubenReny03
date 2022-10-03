@@ -1,12 +1,12 @@
 from typing import List
 
 def merge_sort(data) -> None:
-  mid = len(data)//2
-  data_left = data[:mid]
-  data_right = data[mid:]
-  
-  merge_sort(data_left)
-  merge_sort(data_right)
+  if len(data) >1:
+    mid = (len(data))//2
+    data_left = data[:mid]
+    data_right = data[mid:]
+    merge_sort(data_left)
+    merge_sort(data_right)
   
   i = 0 # for left_ata
   j = 0 # for right_data
