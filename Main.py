@@ -1,7 +1,7 @@
 from typing import List
 
 def merge_sort(data) -> None:
-  mid == data//2
+  mid = data//2
   data_left = data[:mid]
   data_right = data[mid:]
   
